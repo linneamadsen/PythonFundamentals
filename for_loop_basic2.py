@@ -15,3 +15,10 @@
 #     print (listy2)
 #
 # count_positives([1, -1, 2, 4, 6, 1])
+
+# def sum_total(listy3):
+#     sum_total = 0
+#     for item in listy3:
+#         sum_total = sum_total + item
+#     return(sum_total)
+# sum_total([1, -1, 2, 4, 6, 1])
