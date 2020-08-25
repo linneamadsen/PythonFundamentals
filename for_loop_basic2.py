@@ -22,3 +22,11 @@
 #         sum_total = sum_total + item
 #     return(sum_total)
 # sum_total([1, -1, 2, 4, 6, 1])
+
+def average(listy4):
+    sum_total = 0
+    for item in listy4:
+        sum_total = sum_total + item
+    average = sum_total/(len(listy4))
+    print(average)
+average([1, -1, 2, 4, 6, 1])
