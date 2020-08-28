@@ -41,14 +41,48 @@
 #
 # length_function([])
 
-def minimum_list(list6):
-    if len(list6) == 0:
-        return False
-    else:
-        min_num = list6[0]
-        for x in list6:
-            if x < min_num:
-                min_num = x
-        return min_num
+# def minimum_list(list6):
+#     if len(list6) == 0:
+#         return False
+#     else:
+#         min_num = list6[0]
+#         for x in list6:
+#             if x < min_num:
+#                 min_num = x
+#         return min_num
+#
+# minimum_list([])
 
-minimum_list([])
+# def maximum_list(list6):
+#     if len(list6) == 0:
+#         print ("False")
+#     else:
+#         max_num = list6[0]
+#         for x in list6:
+#             if x > max_num:
+#                 max_num = x
+#         print(max_num)
+#
+# maximum_list([1,2,5,-1])
+
+def ultimate_analysis(list7):
+    sum_total = 0
+    minimum_value = list7[0]
+    maximum_value = list7[0]
+    for x in list7:
+        if x < minimum_value:
+            minimum_value = x
+        if x > maximum_value:
+            maximum_value = x
+        sum_total = sum_total + x
+    average = sum_total/(len(list7))
+    total_analyis = {
+    'sumTotal': sum_total,
+    'average': average,
+    'minimum': minimum_value,
+    'maximum': maximum_value,
+    'length': len(list7)
+    }
+    print(total_analyis)
+
+ultimate_analysis([1,5,2,-3])
