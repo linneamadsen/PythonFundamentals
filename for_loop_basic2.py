@@ -31,12 +31,24 @@
 #     return(average)
 # average([1, -1, 2, 4, 6, 1])
 
-def length_function(list5):
-    list_length = 0
-    if len(list5) == 0:
-        list_length = False
-    else:
-        list_length = len(list5)
-    return(list_length)
+# def length_function(list5):
+#     list_length = 0
+#     if len(list5) == 0:
+#         list_length = False
+#     else:
+#         list_length = len(list5)
+#     return(list_length)
+#
+# length_function([])
 
-length_function([])
+def minimum_list(list6):
+    if len(list6) == 0:
+        return False
+    else:
+        min_num = list6[0]
+        for x in list6:
+            if x < min_num:
+                min_num = x
+        return min_num
+
+minimum_list([])
