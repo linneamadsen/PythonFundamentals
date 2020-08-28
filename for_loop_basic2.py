@@ -65,24 +65,33 @@
 #
 # maximum_list([1,2,5,-1])
 
-def ultimate_analysis(list7):
-    sum_total = 0
-    minimum_value = list7[0]
-    maximum_value = list7[0]
-    for x in list7:
-        if x < minimum_value:
-            minimum_value = x
-        if x > maximum_value:
-            maximum_value = x
-        sum_total = sum_total + x
-    average = sum_total/(len(list7))
-    total_analyis = {
-    'sumTotal': sum_total,
-    'average': average,
-    'minimum': minimum_value,
-    'maximum': maximum_value,
-    'length': len(list7)
-    }
-    print(total_analyis)
+# def ultimate_analysis(list7):
+#     sum_total = 0
+#     minimum_value = list7[0]
+#     maximum_value = list7[0]
+#     for x in list7:
+#         if x < minimum_value:
+#             minimum_value = x
+#         if x > maximum_value:
+#             maximum_value = x
+#         sum_total = sum_total + x
+#     average = sum_total/(len(list7))
+#     total_analyis = {
+#     'sumTotal': sum_total,
+#     'average': average,
+#     'minimum': minimum_value,
+#     'maximum': maximum_value,
+#     'length': len(list7)
+#     }
+#     print(total_analyis)
+#
+# ultimate_analysis([1,5,2,-3])
 
-ultimate_analysis([1,5,2,-3])
+def reverse_list(list8):
+  starts = len(list8) -1
+  print("starts is ", starts)
+  for x in range(starts, -1, -1):
+    list8.append(list8.pop(x))
+  print(list8)
+
+reverse_list([1,2,3,4,5])
